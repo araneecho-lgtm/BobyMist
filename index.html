@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Body Scent — น้ำหอมฉีดตัวและโรลออน</title>
+  <meta name="description" content="เติมเสน่ห์ความหอมในแบบที่เป็นคุณ เลือกน้ำหอมฉีดตัวและโรลออนตามอารมณ์: Fresh, Sweet, Confident, Romance">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ส่วนเฉพาะหน้าแรก (เสริมจาก style.css) */
+    .hero--full {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - 5rem);
+      min-height: calc(100svh - 5rem);
+    }
+
+    .hero--full .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero--full .hero__title {
+      max-width: 22ch;
+      margin-bottom: 0;
+      font-size: clamp(1.75rem, 1.1rem + 2.6vw, 3.125rem);
+      line-height: 1.6;
+      text-wrap: balance;
+    }
+
+    .hero--full .divider {
+      margin-block: var(--space-4);
+    }
+
+    .mood-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: var(--space-4) var(--space-3);
+      border: var(--border);
+      border-radius: var(--radius);
+      background: var(--color-white);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color var(--transition);
+    }
+
+    .mood-card:hover {
+      border-color: var(--color-accent);
+      color: inherit;
+    }
+
+    .mood-card__title {
+      margin-bottom: 0;
+    }
+
+    .mood-card .mood-rule {
+      margin-top: var(--space-1);
+      margin-bottom: var(--space-3);
+    }
+
+    .mood-card__desc {
+      flex: 1;
+      margin-bottom: var(--space-3);
+      font-size: var(--text-sm);
+    }
+
+    .mood-card__cta {
+      font-size: var(--text-sm);
+      color: var(--color-accent-deep);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--full">
+      <div class="container">
+        <h1 class="hero__title">เติมเสน่ห์ความหอมในแบบที่เป็นคุณ เผยความมั่นใจและบรรยากาศที่ใช่ในทุกๆ วัน ด้วย Body Scent</h1>
+        <hr class="divider">
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <!-- Mood -->
+    <section class="section" id="moods">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>เลือกกลิ่นตามอารมณ์ของคุณ</h2>
+          <hr class="divider">
+        </div>
+
+        <div class="grid grid--4">
+          <a class="mood-card" data-mood="fresh" href="product.html?mood=fresh">
+            <h3 class="mood-card__title">Fresh</h3>
+            <span class="mood-rule" aria-hidden="true"></span>
+            <p class="mood-card__desc">กลิ่นหอมโปร่งสะอาดที่ช่วยปลุกความสดชื่น เติมพลังความตื่นตัวเบาสบายเหมือนเพิ่งอาบน้ำเสร็จใหม่ๆ</p>
+            <span class="mood-card__cta">ดูสินค้า Fresh</span>
+          </a>
+
+          <a class="mood-card" data-mood="sweet" href="product.html?mood=sweet">
+            <h3 class="mood-card__title">Sweet</h3>
+            <span class="mood-rule" aria-hidden="true"></span>
+            <p class="mood-card__desc">กลิ่นหอมหวานแผ่วเบาละมุนใจ ให้ความรู้สึกอบอุ่น อ่อนโยน และน่ารักน่าเอ็นดูอย่างเป็นธรรมชาติ</p>
+            <span class="mood-card__cta">ดูสินค้า Sweet</span>
+          </a>
+
+          <a class="mood-card" data-mood="confident" href="product.html?mood=confident">
+            <h3 class="mood-card__title">Confident</h3>
+            <span class="mood-rule" aria-hidden="true"></span>
+            <p class="mood-card__desc">กลิ่นหอมนิ่งสงบเรียบหรู เสริมลุคสะอาด ดูดี มีเสน่ห์แบบน่าเชื่อถือ พร้อมเปิดรับทุกโอกาสสำคัญ</p>
+            <span class="mood-card__cta">ดูสินค้า Confident</span>
+          </a>
+
+          <a class="mood-card" data-mood="romance" href="product.html?mood=romance">
+            <h3 class="mood-card__title">Romance</h3>
+            <span class="mood-rule" aria-hidden="true"></span>
+            <p class="mood-card__desc">กลิ่นหอมหวานมีมิติเย้ายวน เติมความอบอุ่น ชวนลุ่มหลง และสร้างความทรงจำสุดแสนพิเศษ</p>
+            <span class="mood-card__cta">ดูสินค้า Romance</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="brand" href="index.html">Body Scent</a>
+      <p>&copy; 2026 Body Scent</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
